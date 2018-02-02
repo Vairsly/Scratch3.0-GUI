@@ -1,0 +1,27 @@
+@import "../../css/units.css";
+@import "../../css/colors.css";
+
+.modal-content {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    overflow-y: auto;
+    -webkit-overflow-scrolling: 'touch';
+    user-select: none;
+
+    /* Default modal resets */
+    margin: 0;
+    border: none;
+    border-radius: 0;
+}
+
+.library-scroll-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 160px);
+    background: $ui-pane-gray;
+}
