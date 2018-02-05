@@ -4,7 +4,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 import ButtonComponent from '../components/button/button.jsx';
-import {ComingSoonTooltip} from '../components/coming-soon/coming-soon.jsx';
+import button from '../components/button/button.jsx';
 
 
 class SaveButton extends React.Component {
@@ -40,18 +40,12 @@ class SaveButton extends React.Component {
             ...props
         } = this.props;
         return (
-            <ComingSoonTooltip
-                place="bottom"
-                tooltipId="save-button"
-            >
                 <ButtonComponent
-                    disabled
                     onClick={this.handleClick}
-                    {...props}
+                    //{...props}
                 >
                     Save
                 </ButtonComponent>
-            </ComingSoonTooltip>
         );
     }
 }

@@ -33,26 +33,8 @@ const MenuBar = props => (
             </div>
             <SaveButton className={styles.menuItem} />
             <LoadButton className={styles.menuItem} />
-            <LanguageSelector className={styles.menuItem} />
         </div>
-        <div className={styles.feedbackButtonWrapper}>
-            <Button
-                className={styles.feedbackButton}
-                onClick={props.onGiveFeedback}
-            >
-                <img
-                    className={styles.feedbackButtonIcon}
-                    src={feedbackIcon}
-                />
-                <span className={styles.feedbackText}>
-                    <FormattedMessage
-                        defaultMessage="Give Feedback"
-                        description="Label for feedback form modal button"
-                        id="gui.menuBar.giveFeedback"
-                    />
-                </span>
-            </Button>
-        </div>
+        
     </Box>
 );
 

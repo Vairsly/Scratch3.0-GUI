@@ -71,12 +71,7 @@ const GUIComponent = props => {
             className={styles.pageWrapper}
             {...componentProps}
         >
-            {previewInfoVisible ? (
-                <PreviewModal />
-            ) : null}
-            {feedbackFormVisible ? (
-                <FeedbackForm />
-            ) : null}
+            
             {isRendererSupported ? null : (
                 <WebGlModal />
             )}

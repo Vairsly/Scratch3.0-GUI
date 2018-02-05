@@ -1,3 +1,7 @@
 .button {
     cursor: pointer;
+    display: inline-flex;
+    color: aliceblue;
+    align-items: center;
+    vertical-align: middle;
 }
